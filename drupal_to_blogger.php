@@ -40,6 +40,14 @@ $global_author_email="christophe@vandeplas.com";
 /////////////////////////////////////////////////
 // you should probably NOT change anything below
 //
+
+// We'll be outputting a xml
+header('Content-type: text/xml');
+
+// It will be called downloaded.pdf
+header('Content-Disposition: attachment; filename="drupal_to_blogger_export.xml"');
+
+
 $sql = "SELECT * FROM ".$db_prefix."node as n JOIN ".$db_prefix."node_revisions as nr ON n.nid=nr.nid";
 
 mysql_connect("localhost", $user, $pass) or die(mysql_error());
