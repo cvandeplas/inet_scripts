@@ -4,6 +4,16 @@
  * Script to export your drupal_database to an XML format that is importable in Blogger.
  * Copyleft Christophe Vandeplas <christophe@vandeplas.com>
  *
+ * This php script does the export while keeping:
+ *   posts
+ *   comments
+ *   tags / categories 
+ *   publishing date
+ * However there are a few quircks:
+ *   Comments are (partially) anonymized because of a security feature of Blogger
+ *   URLs are not customizable, so you will create dead links
+ *   Images are not changed or imported. So manual work is still necessary
+ *
  * INSTRUCTIONS
  ***************
  * To use this script first create your blog into Blogger, create a test posts 
@@ -22,6 +32,9 @@ $db_prefix="drupal_";
 $global_author="Christophe Vandeplas";
 $global_author_url="http://www.blogger.com/profile/01574685218200894861";
 $global_author_email="christophe@vandeplas.com";
+
+
+
 
 
 /////////////////////////////////////////////////
