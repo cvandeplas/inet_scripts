@@ -43,8 +43,6 @@ $global_author_email="christophe@vandeplas.com";
 
 // We'll be outputting a xml
 header('Content-type: text/xml');
-
-// It will be called downloaded.pdf
 header('Content-Disposition: attachment; filename="drupal_to_blogger_export.xml"');
 
 
