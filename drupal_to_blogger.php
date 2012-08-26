@@ -1,8 +1,10 @@
 <?php
 /**
- * Drupal to Blogger 
+ * Drupal 6 to Blogger 
  * Script to export your drupal_database to an XML format that is importable in Blogger.
  * Copyleft Christophe Vandeplas <christophe@vandeplas.com>
+ *
+ * For Drupal 7 use https://github.com/nschloe/drupal2blogger 
  *
  * This php script does the export while keeping:
  *   posts
