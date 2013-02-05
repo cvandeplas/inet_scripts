@@ -78,7 +78,7 @@ def getEpisodeIdsFromXmlList(url):
     episode_ids = []
     for node in dom.getElementsByTagName('item'):
         link = getText(node.getElementsByTagName('link')[0].childNodes)
-        id_reg = re.search('id=([0-9]+)', link)
+        id_reg = re.search('([0-9]+)', link)
         if id_reg:
             if debug: print "  id="+id_reg.group(1)
             episode_ids.append(id_reg.group(1))
